@@ -1,4 +1,4 @@
-i did git clone to other directory and then i just copy paste it to here
+i did git clone to other directory and then i just copy paste main and the requirements to here
 
 git clone https://github.com/yosefanaliza/streamlit_minikube_app.git
 
@@ -13,7 +13,7 @@ minikube:
 ```
 minikube start
 ```
-
+then did git add, commit, and push
 created branch "Dockerfile"
 ```
 git checkout -b Dockerfile
@@ -66,3 +66,42 @@ my-pod   1/1     Running   0          102s
 
 then did git add, commit, and push
 and created branch service
+
+
+creating the service:
+
+```
+kubectl apply -f service.yaml
+```
+
+then did git add, commit, and push
+and went back to main branch
+
+
+
+
+
+
+
+
+
+
+
+----------------------- debugging ---------------------
+see the status
+```
+kubectl get pods
+kubectl get service
+```
+
+see logs
+```
+kubectl logs service
+kubectl logs service
+```
+
+detailed info
+```
+kubectl describe pod
+kubectl describe service
+```
