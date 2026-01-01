@@ -7,6 +7,10 @@
 this code creates kubernetes application for an already existing code   
 
 
+
+
+
+
 ## how to run me ##
 
 minikube start
