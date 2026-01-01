@@ -26,9 +26,9 @@ docker build -t jacobsun211/my-repo:latest .
 ```
 
 
-i ran it in docker desktop and it worked
+run it and see it worked
 ```
-
+docker run -p 8080:8501 jacobsun211/my-repo:latest 
 ```
 
 
@@ -38,3 +38,31 @@ pushing the image:
 docker login
 docker push jacobsun211/my-repo:latest
 
+
+then did git add, commit, and push
+```
+git add .
+git commit -m "yada yada"
+git push --set-upstream origin Dockerfile
+```
+
+accepted the merge request on github, went to main and created "pod" brnach 
+
+```
+git checkout main
+git checkout -b pod
+```
+
+
+creating the pod and see if its running:
+
+```
+kubectl apply -f pod.yaml
+kubectl get pods
+```
+NAME     READY   STATUS    RESTARTS   AGE
+my-pod   1/1     Running   0          102s
+
+
+then did git add, commit, and push
+and created branch service
