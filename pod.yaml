@@ -10,6 +10,6 @@ spec:
     image: jacobsun211/my-repo:latest
     ports:
     - protocol: TCP
-      containerPort: 80
+      containerPort: 8080
 
 

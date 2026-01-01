@@ -96,12 +96,12 @@ kubectl get service
 
 see logs
 ```
-kubectl logs service
+kubectl logs my-pod
 kubectl logs service
 ```
 
 detailed info
 ```
-kubectl describe pod
+kubectl describe my-pod
 kubectl describe service
 ```
