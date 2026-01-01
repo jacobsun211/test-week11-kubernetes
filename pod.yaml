@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: pod
+spec:
+  containers:
+  - name: my-pod
+    image: jacobsun211/my-repo:latest
+    ports:
+    - protocol: TCP
+      containerPort: 80
+
+
